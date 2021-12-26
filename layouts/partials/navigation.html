@@ -1,5 +1,5 @@
 <nav class="navigation">
-	<div{{ .Site.Title }}
+	<div id="nav-title">{{ .Site.Title }}</div>
 
 	{{ if not .IsHome }}
 		<a href="{{ "/" | relURL }}"> <span class="arrow">←</span>{{ with .Site.Params.home }}{{ . }}{{ else }}{{ i18n "home" }}{{ end }}</a>
